@@ -268,6 +268,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 5271235804501197941}
+  - {fileID: 3626614004791477089}
   - {fileID: 4972292315480925289}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -286,6 +287,7 @@ MonoBehaviour:
   Links:
   - {fileID: 1640363865110651249}
   - {fileID: 2725607065555968926}
+  - {fileID: 2204513690887026373}
 --- !u!114 &7975701934047173814
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -527,6 +529,84 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4454951518309930566}
   m_Mesh: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &4734911207311365623
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3626614004791477089}
+  - component: {fileID: 7679477254556122024}
+  - component: {fileID: 745107536812227579}
+  - component: {fileID: 2204513690887026373}
+  m_Layer: 0
+  m_Name: Input Consumer
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3626614004791477089
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4734911207311365623}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 7509363276189378629}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7679477254556122024
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4734911207311365623}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: af37b22da729d95829879bc9ba980f0f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: BovineLabs.Timeline.PlayerInputs.Authoring::BovineLabs.Timeline.PlayerInputs.Authoring.InputConsumerAuthoring
+  PlayerId: 0
+  Controllable: 0
+  OverrideTrigger: 1
+  ReleaseIdleSeconds: 0.25
+--- !u!114 &745107536812227579
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4734911207311365623}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ce5be625b13416781e3426ee2109abf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: BovineLabs.Core.Authoring::BovineLabs.Core.Authoring.TransformAuthoring
+  TransformUsageFlags: 2
+--- !u!114 &2204513690887026373
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4734911207311365623}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2efe9de47a2b428a9e9c878aafd123d1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: BovineLabs.Timeline.EntityLinks.Authoring::BovineLabs.Timeline.EntityLinks.Authoring.EntityLinkSourceAuthoring
+  Root: {fileID: 3997087507869455515}
+  Schemas:
+  - {fileID: 11400000, guid: a31b484df79a0368a9134adf3d1c5af9, type: 2}
 --- !u!1 &7757831923270457907
 GameObject:
   m_ObjectHideFlags: 0
